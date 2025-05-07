@@ -75,7 +75,7 @@ nav {
   margin: 0 1rem;
 }
 
-.menu a {
+.menu a, .artigo a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -85,7 +85,7 @@ nav {
   transition: color 0.3s ease;
 }
 
-.menu a:hover {
+.menu a:hover , .artigo a:hover{
   color: #e67e22;
 }
 
@@ -126,8 +126,23 @@ nav {
 
 .disclaimer {
   font-size: 0.9rem;
-  color: #777;
+  color: #313030;
   margin-top: 1rem;
+}
+
+/* Estilo para os h3 que terão o ícone */
+.h3-com-icone {
+  display: flex;         /* Alinha o <img> e o texto na mesma linha */
+  align-items: center;   /* Alinha verticalmente ao centro */
+  gap: 0.5em;            /* Espaço entre a imagem e o texto (0.5em = metade do tamanho da fonte) */
+                         /* Ajuste 'gap' conforme sua preferência visual */
+}
+
+.h3-com-icone img {
+  height: 1em;           /* Define a altura da imagem para ser igual ao tamanho da fonte do h3. */
+                         /* 1em refere-se ao font-size do elemento pai (.h3-com-icone) */
+  width: auto;           /* Mantém a proporção da imagem, ajustando a largura automaticamente */
+  /* vertical-align: middle; /* Geralmente não é necessário com flexbox, mas pode ajudar em layouts mais antigos */
 }
 
 footer {
