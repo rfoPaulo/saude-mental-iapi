@@ -158,9 +158,27 @@ footer a {
   text-decoration: underline;
 }
 
+.footer-images {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* espaçamento entre as imagens */
+  margin-top: 1rem;
+  flex-wrap: wrap; /* permite quebrar para o mobile */
+}
+
+.footer-images img {
+  max-width: 150px; /* ajuste conforme necessário */
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
+  }
+
+  .footer-images {
+    flex-direction: column;
+    align-items: center;
   }
 
   .card, .app {
